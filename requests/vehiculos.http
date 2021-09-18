@@ -1,0 +1,49 @@
+@api = http://localhost:3000/api/vehiculos
+
+###
+GET http://localhost:3000/api/vehiculos
+
+{{api}}/ABC-320
+
+###
+POST http://localhost:3000/api/vehiculos/entry
+Content-Type: application/json
+
+{
+    "id":null,
+    "placa": "ABC-532",
+    "fechaIngreso":"08-23-2021 10:52:35"
+
+}
+
+
+###
+POST http://localhost:3000/api/vehiculos/ABC-562
+Content-Type: application/json
+
+{
+    "fechaSalida":"08-24-2021 20:01"
+}
+
+###
+
+POST http://localhost:3000/api/vehiculos/actualizarTime/ABC-316
+
+
+###
+POST http://localhost:3000/api/vehiculos/cupos/set
+Content-Type: application/json
+
+{
+    "capacidad": 23
+}
+
+###
+GET http://localhost:3000/api/vehiculos/getTiempo/ABC-316
+
+
+###
+GET http://localhost:3000/api/vehiculos/cupos/get
+
+
+
